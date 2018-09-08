@@ -3,6 +3,7 @@
     <string name="ap">Academic Program</string>
     <string name="abm">ABM</string>
     <string-array name="abm">
+        <item>ABM</item>
         <item>BSIT</item>
         <item>BSCS</item>
         <item>BSCpE</item>
