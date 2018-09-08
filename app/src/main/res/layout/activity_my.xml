@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MyActivity">
+
+    <TextView
+        android:id="@+id/ap"
+        android:text="Academic Program"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Spinner
+        android:id="@+id/abm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:entries="@array/abm">
+    </Spinner>
+
+    <EditText
+        android:hint="Last Name"
+        android:id="@+id/ln"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ap"/>
+    <EditText
+        android:hint="First Name"
+        android:id="@+id/fn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ln"/>
+    <EditText
+        android:hint="Middle Name"
+        android:id="@+id/mn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fn"/>
+    <TextView
+        android:id="@+id/gen"
+        android:text="@string/gen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mn"/>
+
+    <RadioGroup
+        android:id="@+id/radioSex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gen">
+
+        <RadioButton
+            android:id="@+id/rdmale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rdmale"/>
+
+        <RadioButton
+            android:id="@+id/rdfmale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rdfmale" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/name"
+        android:text="@string/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioSex"/>
+    <CheckBox
+        android:id="@+id/orc138"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/orc138"
+        android:layout_below="@id/name"/>
+
+    <CheckBox
+        android:id="@+id/nso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nso"
+        android:layout_below="@+id/orc138"/>
+
+    <CheckBox
+        android:id="@+id/cogmc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cogmc"
+        android:layout_below="@+id/nso"/>
+    <CheckBox
+        android:id="@+id/cojhs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cojhsc"
+        android:layout_below="@+id/cogmc"/>
+
+    <Button
+        android:id="@+id/btnDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_display"
+        android:layout_below="@+id/cojhs"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClick"/>
+
+</RelativeLayout>
